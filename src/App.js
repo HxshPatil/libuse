@@ -12,11 +12,15 @@ import {
   useModal,
 } from "@attrybtech/attryb-ui";
 
+import Card from "./components/card/card";
+
 function App() {
   const { modalState, modalRef, exitModal, showModal } = useModal();
+  // const [content, setContent] = useState('');
   const [value, setValue] = useState("");
   const [showAlert, setShowAlert] = useState(false);
-  const [themeofAlert, setAlertTheme] = useState("warning");
+  const [themeofAlert, setAlertTheme] = useState("success");
+  // const[content,setContent]= useState([]);
   const modalOkayHandler = () => {
     console.log(value);
     setShowAlert(true);
@@ -44,7 +48,7 @@ function App() {
               <AlertPopupBody>
                 <Input
                   // state={"default"}
-                  placeholder={"Lorem is ipsum..."}
+                  placeholder={"type your tweet"}
                   preFilledValue={value}
                   maxCharsLimit={160}
                   onChange={(event) => {
@@ -57,7 +61,7 @@ function App() {
                   Cancel
                 </Button>
                 <div className="DocEntry">
-                  <Alert content="Limit text to 160 characters" theme={themeofAlert} />
+                  <Alert content="Default Alert Text" theme={themeofAlert} />
                   <div className="Example">
                     <Button
                       onClick={modalOkayHandler}
@@ -72,6 +76,7 @@ function App() {
           </>
         }
       />
+      <Card />
     </div>
   );
 }
