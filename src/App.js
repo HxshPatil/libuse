@@ -21,8 +21,8 @@ function App() {
   const month=["Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"];
   const [tweet, setTweet]= useState('');
   const [timestamp, setTimestamp]= useState('');
-  const [tweets, setTweets]= useState([]);
-  const [timestamps, setTimestamps]= useState([]);
+  const [tweets, setTweets]= useState(["Hi!", "default Tweets"]);
+  const [timestamps, setTimestamps]= useState(["Feb 12","Feb 12"]);
   const [showAlert, setShowAlert] = useState(false);
   const [themeofAlert, setAlertTheme] = useState("success");
   const modalOkayHandler = () => {
