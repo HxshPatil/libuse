@@ -1,0 +1,17 @@
+.card-container{
+    display: flex;
+    flex-direction: row;
+    padding:2px;
+    background-color: azure;
+    margin-bottom:10px;
+    /* align-items:self-end; */
+}
+
+img{
+    height:60px;
+    width:auto;
+}
+
+.content-container{
+    padding-left: 2px;
+}

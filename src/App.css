@@ -1,3 +1,29 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+}
+
+.page{
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar-container{
+  background-color: black;
+  color:white;
+  width:30%;
+  height:100dvh;
+  padding:10px;
+}
+
+.cards-container{
+  background-color: rgb(239, 232, 232);
+  color:rgb(0, 0, 0);
+  width:70%;
+  height:100dvh;
+  padding:10px;
+}
+
+.tweet{
+  align-items: baseline;
 }
