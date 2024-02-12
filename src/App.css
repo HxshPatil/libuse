@@ -1,3 +1,9 @@
+*{
+  padding:0;
+  margin:0;
+  font-family: "Tinos";
+}
+
 .App {
   text-align: center;
   box-sizing: border-box;
@@ -6,10 +12,10 @@
 .page{
   display: flex;
   flex-direction: row;
+  background-color: #e6edf1;
 }
 
 .sidebar-container{
-  background-color: black;
   color:white;
   width:30%;
   height:100dvh;
@@ -17,13 +23,32 @@
 }
 
 .cards-container{
-  background-color: rgb(239, 232, 232);
   color:rgb(0, 0, 0);
   width:70%;
   height:100dvh;
   padding:10px;
 }
 
-.tweet{
+/* .tweet{
   align-items: baseline;
+} */
+
+.left-navbar * {
+  display: inline;
+}
+
+.left-navbar li {
+  margin: 20px;
+}
+
+.left-navbar li a {
+  color: rgb(88, 85, 85);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.left-navbar li a img {
+  height: 18px;
+  width: 18px;
 }
