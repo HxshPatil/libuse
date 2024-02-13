@@ -48,7 +48,10 @@ function App() {
     <div className="App">
       <Navbar
        navbarLeftSection={
+        <>
+        <div className="twitter-logo-b"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/292px-Logo_of_Twitter.svg.png' alt=''></img></div>
         <div className='left-navbar'>
+          
           <ul>
             <li>
               <a href="#"> Home </a>
@@ -59,10 +62,12 @@ function App() {
             <li>
               <a href="#"> Notifications </a>
             </li>
-            <li> <a href="#"> Messages <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/292px-Logo_of_Twitter.svg.png' alt=''></img> </a>
+            <li> <a href="#"> Messages </a>
+            <div className="twitter-logo-a"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/292px-Logo_of_Twitter.svg.png' alt=''></img></div>
             </li>
           </ul>
         </div>
+        </>
       }
         navbarRightSection={
           <>

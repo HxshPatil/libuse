@@ -1,7 +1,7 @@
 *{
   padding:0;
   margin:0;
-  font-family: "Tinos";
+
 }
 
 .App {
@@ -36,6 +36,7 @@
 
 .left-navbar li {
   margin: 20px;
+  align-items: center;
 }
 
 .left-navbar li a {
@@ -44,9 +45,14 @@
   font-size: 20px;
 }
 
-.left-navbar li a img {
+.twitter-logo-a{
   height: 15px;
   width: auto;
+  padding-left:10px;
+}
+
+.twitter-logo-b{
+  display:none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -114,6 +120,13 @@
 
   .left-navbar li{
     display:none;
+  }
+
+  .twitter-logo-b{
+    display:block;
+    height: 15px;
+    width: auto;
+    padding-left:5px;
   }
   
 }
